@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136 136" role="img" aria-label="KALPANA SOFTTECH SOLUTIONS icon">
+  <defs><linearGradient id="kg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#0D2B5E"/>
+    <stop offset="0.55" stop-color="#1E5FA8"/>
+    <stop offset="1" stop-color="#12B5A5"/>
+  </linearGradient></defs>
+  
+  <g transform="translate(8,8)"><rect x="0" y="0" width="120" height="120" rx="31.2" fill="url(#kg)"/>
+  <path d="M36.0,64.2 L53.4,82.2 L87.0,40.2" fill="none" stroke="#FFFFFF" stroke-width="13.2" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>
