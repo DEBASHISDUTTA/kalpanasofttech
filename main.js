@@ -33,11 +33,21 @@ document.documentElement.classList.add('js');
   if (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
-      var name = encodeURIComponent(form.name.value || '');
-      var org = encodeURIComponent(form.org.value || '');
-      var msg = encodeURIComponent(form.message.value || '');
-      var body = 'Name: ' + name + '%0D%0AOrganisation: ' + org + '%0D%0A%0D%0A' + msg;
-      window.location.href = 'mailto:info@kalpanasofttech.com?subject=Website%20enquiry%20from%20' + name + '&body=' + body;
+      var name  = form.name.value || '';
+      var email = form.email.value || '';
+      var phone = form.phone.value || '';
+      var org   = form.org.value || '';
+      var msg   = form.message.value || '';
+      var body =
+        'Name: ' + name + '\r\n' +
+        'Email: ' + email + '\r\n' +
+        'Phone: ' + phone + '\r\n' +
+        'School / firm: ' + org + '\r\n\r\n' +
+        msg;
+      var subject = 'Website enquiry from ' + (name || 'website visitor');
+      window.location.href = 'mailto:info@kalpanasofttech.com'
+        + '?subject=' + encodeURIComponent(subject)
+        + '&body=' + encodeURIComponent(body);
     });
   }
 })();
